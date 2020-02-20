@@ -1,7 +1,7 @@
 import 'package:corona_tracker/provider/info.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 
 class StatsView extends StatefulWidget {
   @override
@@ -17,13 +17,14 @@ class _StatsViewState extends State<StatsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade300,
       appBar: AppBar(
+        backgroundColor: Color(0xff6a1b9a),
         centerTitle: true,
         elevation: 0.0,
-        backgroundColor: Colors.transparent,
         title: Text(
           "Stats",
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.white),
         ),
       ),
       body: Container(
@@ -53,7 +54,7 @@ class _StatsViewState extends State<StatsView> {
                   trailing: Text(
                     infected,
                     style: TextStyle(
-                      color: Colors.pink,
+                      color: Color(0xff512da8),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
                     ),
